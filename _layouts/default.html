@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="page-content" style="min-height:calc(80vh - 66px);"> <!-- CHECKPOINT 본문 콘텐츠 최소 꽉차게 하기 위한 설정-->
+        {{ content }}
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
