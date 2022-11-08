@@ -98,12 +98,12 @@ pre code.hljs {
 		}
 	}
 	.scrim {
-		padding: 2em .5em;
+		padding: 1em .25em;
 		&.has-cover {
 			background-color: rgba(0,0,0,0.2);
-			padding: 4em 1em !important;
+			padding: 2em .5em !important;
 			@include media($tablet) {
-				padding: 6em 1em !important;
+				padding: 3em .5em !important;
 			}
 		}
 	}

@@ -9,8 +9,8 @@ exclude:
   - "/vendor/"
 
 # Site settings
-title: blog
-subtitle: "blog test"
+title: "메모로그"
+subtitle: "에버노트 그만쓰려고 만든 메모장 블로그"
 email: seolminsu90@gmail.com
 name: minsu seol
 description: >
@@ -53,6 +53,7 @@ jekyll-archives:
 # ga_tracking_id: "UA-XXXX-1"
 
 # Category descriptions (for archive pages)
+# CHECKPOINT 카테고리 정의 (desc는 어디에 써지는거지)
 descriptions:
   - cat: jekyll
     desc: "Posts describing Jekyll setup techniques."
@@ -78,7 +79,7 @@ descriptions:
 social:
   - name: GitHub
     icon: github
-    username: msseol
+    username: "msseol (blog)"
     url: https://github.com/msseol
     desc: GitHub
     share: false
