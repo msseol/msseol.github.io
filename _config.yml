@@ -3,7 +3,7 @@
 plugins:
   - jekyll-archives # Sorry, not GitHub pages friendly!
   - jekyll-sitemap
-  - jekyll-paginate-v2
+  - jekyll-paginate
 safe: false
 exclude:
   - "/vendor/"
@@ -35,6 +35,10 @@ pagination:
   per_page: 5
   permalink: "/page/:num/"
   sort_reverse: true
+
+# 위에는 v2 관련... 아래는 일반 페이지네이션 (깃 떄문에 ..다운그레이드 했음 ㅡㅡ...)
+paginate: 5                  # 페이징 처리 개수
+paginate_path: "/page:num/"   # URL 규칙
 
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)
 jekyll-archives:
