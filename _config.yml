@@ -59,11 +59,26 @@ jekyll-archives:
 # Category descriptions (for archive pages)
 # CHECKPOINT 카테고리 정의 (desc는 어디에 써지는거지)
 descriptions:
-  - cat: jekyll
-    desc: "Posts describing Jekyll setup techniques."
+  - cat: backend
+    desc: 백엔드 서비스 개발 메모
+    
+  - cat: frontend
+    desc: 프론트엔드 및 js css html 메모
+    
+  - cat: database
+    desc: 데이터베이스 관련 메모
+    
+  - cat: server
+    desc: 서버 웹서버 클라우드 등 서버 메모
+    
+  - cat: shell
+    desc: 리눅스 파워쉘 등 쉘에서 사용하는 것 메모
+
+  - cat: ci/cd
+    desc: 배포나 배포에 필요한 것들 메모
 
   - cat: etc
-    desc: "기타"
+    desc: 기타 나머지 잡동사니 메모
 
 # Social icons and sharing options
 #
