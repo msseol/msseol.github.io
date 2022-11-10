@@ -35,11 +35,11 @@ code {
 }
 
 blockquote {
-	color: $medium-gray;
+	color: #8000c1;
 	font-style: italic;
-	border-left: 2px solid $light-gray;
+	border-left: 2px solid #5f119d;
 	margin-left: 0;
-	padding-left: 3em;
+	padding-left: 1.5em;
 }
 
 pre code.hljs {
@@ -91,7 +91,7 @@ pre code.hljs {
 		background-position: 50% 50%;
 		background-size: cover;
 		.title {
-			font-size: modular-scale(4);
+			font-size: modular-scale(3);
 		}
 		.subtitle, .info {
 			font-size: modular-scale(1);
@@ -260,7 +260,7 @@ pre code.hljs {
 		background-color: $highlight-color;
 		.site-header{
 			.title {
-				font-size: modular-scale(4);
+				font-size: modular-scale(3);
 			}
 			.subtitle {
 				font-style: italic;
