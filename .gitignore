@@ -1,10 +1,7 @@
 .DS_Store
 
 # Compiled site
-_site/*
-!_site/category/
-!_site/tag/
-
+_site
 .jekyll-cache/
 
 # Sass garbage
