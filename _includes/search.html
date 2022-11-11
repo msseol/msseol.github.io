@@ -10,6 +10,9 @@
         </div>
     </div>
 </div>
+<!-- 랜덤 검색어 -->
+<p id="keywords">
+</p>
 
 <!-- Script pointing to jekyll-search.js -->
 <script src="/assets/js/jekyll-search.min.js" type="text/javascript"></script>
@@ -19,7 +22,7 @@
         searchInput: document.getElementById('search-input'),
         resultsContainer: document.getElementById('results-container'),
         json: '/search.json',
-        searchResultTemplate: '<li><a href="{url}" title="{desc}"> [{category}] {title}</a></li>',
+        searchResultTemplate: '<li><a href="{url}" title="{desc}"> <span style="color:#d95397">[{category}]</span> {title}</a></li>',
         noResultsText: '게시글이 없습니다.',
         limit: 10000,
         fuzzy: false,
@@ -28,6 +31,30 @@
             }
         },
         exclude: ['Welcome']
+    });
+
+    function randomTags() {
+        let allPosts = [
+            {% for post in site.posts %}
+    "{{ post.tags | join: ', ' }}"{% unless forloop.last %}, {% endunless %}
+    {% endfor %} ];
+
+    return allPosts[Math.floor(Math.random() * allPosts.length)];
+  }
+
+    document.addEventListener("DOMContentLoaded", function (event) {
+        let tags = ''
+        for (let i = 0; i < 3; i++) {
+            tags += randomTags() + ', '
+        }
+
+        if (tags !== '')
+            tags = tags.substring(0, tags.length - 2)
+
+        if (tags.startsWith(', '))
+            tags = tags.substring(2, tags.length)
+
+        document.getElementById("keywords").innerHTML = tags
     });
 </script>
 

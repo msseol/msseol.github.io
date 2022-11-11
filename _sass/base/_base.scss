@@ -56,8 +56,8 @@ code span {
     border: none;
     line-height: 44px;
     outline: none;
-    padding:0;
-    text-indent:1rem;
+    padding: 0;
+    text-indent: 1rem;
     border-style: none;
 }
 
@@ -66,4 +66,13 @@ code span {
     border-color: inherit;
     -webkit-box-shadow: none;
     box-shadow: none;
+}
+
+#keywords {
+    color: #97a7d5;
+    width: 95%;
+    padding: 0 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }

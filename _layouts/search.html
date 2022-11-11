@@ -2,15 +2,21 @@
 layout: default
 ---
 <div class="wrapper">
-<div class="page">
+  <div class="page">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
+    <header class="post-header">
+      <h1 class="post-title">{{ page.title }}</h1>
+    </header>
 
-  {% include page_divider.html %}
 
-  {% include search.html %} <!-- 검색바 -->
+    {% include page_divider.html %}
 
-</div>
+    <!-- 검색바 -->
+    {% include search.html %}
+
+    <article class="post-content">
+      {{ content }} <!-- 지금은 search.md에 콘텐츠 없음 -->
+    </article>
+
+  </div>
 </div>
