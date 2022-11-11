@@ -16,7 +16,7 @@ tags:	spring poi streaming
 **Maven dependency**
 
 poi와 xlsx-streamer 라는 라이브러리를 사용한다.
-```
+```bash
 <dependency>
     <groupId>org.apache.poi</groupId>
     <artifactId>poi-ooxml</artifactId>
@@ -41,7 +41,7 @@ poi와 xlsx-streamer 라는 라이브러리를 사용한다.
 아래는 MultipartFile로 엑셀을 받아 특정 행의 값을 10000개 행씩 처리하는 예시다.   
 StreamingReader으로 Workbook을 읽어오는 부분만 자세히 보면 된다.
 
-```java
+```bash
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.function.Function;
@@ -133,13 +133,13 @@ public class ExcelReader {
 
 함수는 편한대로 수정해서 사용하면 된다.
 
-```java
+```bash
 
 // DI
 private final ExcelReader excelReader;
 private final Repository repository;
 
-...
+```
 
 excelReader.readExcel(multipartFile, Repository::saveAll, Model.class); // Function 부분엔 row datas에 대한 처리 및 응답(status) 리턴해서 사용
 
