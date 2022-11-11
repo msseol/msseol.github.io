@@ -82,28 +82,6 @@ models:
           - type: boolean
             name: sort_reverse
             label: Sort Reverse
-      - type: object
-        name: jekyll-archives
-        label: Jekyll Archives 
-        fields:
-          - type: list
-            name: enabled
-            label: Enabled
-            items:
-              type: string
-          - type: string
-            name: layout
-            label: Layout
-          - type: object
-            name: permalinks
-            label: Permalinks
-            fields:
-              - type: string
-                name: category
-                label: Category
-              - type: string
-                name: tag
-                label: Tag
       - type: string
         name: disqus_shortname
         label: Disqus Shortname

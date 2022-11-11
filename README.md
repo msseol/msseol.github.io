@@ -8,7 +8,7 @@
 ```bash
 # install Bundler if you don't have it already
 gem install bundler
-# install jekyll, jekyll-archives, jekyll-sitemap, and jekyll-paginate
+# install jekyll, jekyll-sitemap, and jekyll-paginate
 bundle install
 # run localhost:4000
 bundle exec jekyll serve

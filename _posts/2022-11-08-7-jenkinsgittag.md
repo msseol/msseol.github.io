@@ -2,8 +2,7 @@
 layout: post
 title:  "Jenkins + Git 태그 기준으로 빌드하기"
 date:   2022-11-08 23:00:08
-categories: cicd
-tags:	git tag jenkins
+categories: CICD
 ---
 
 <i class="fa-solid fa-check"></i> *Git에 등록된 태그 기준으로 jenkins를 빌드하게 하는 과정 메모*

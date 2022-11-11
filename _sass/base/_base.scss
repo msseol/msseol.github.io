@@ -35,10 +35,35 @@
     font-family: 'Chosunilbo_myungjo' !important
 }
 
-code, code span {
+code,
+code span {
     font-family: 'Bitstream Vera Sans Mono', sans-serif !important;
 }
 
 .hljs-comment {
     color: #ffe04a !important
+}
+
+#search-bar {
+    margin: 32px auto;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+#search-bar #search-input {
+    width: calc(100% - 30px);
+    border: none;
+    line-height: 44px;
+    outline: none;
+    padding:0;
+    text-indent:1rem;
+    border-style: none;
+}
+
+*:focus {
+    outline: none !important;
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }

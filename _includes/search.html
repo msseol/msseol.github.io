@@ -1,0 +1,64 @@
+<!-- 검색 바 -->
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div id="search-bar">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input id="search-input" type="text" placeholder="Search..." />
+            </div>
+            <ul id="results-container"></ul>
+        </div>
+    </div>
+</div>
+
+<!-- Script pointing to jekyll-search.js -->
+<script src="/assets/js/jekyll-search.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '/search.json',
+        searchResultTemplate: '<li><a href="{url}" title="{desc}"> [{category}] {title}</a></li>',
+        noResultsText: '게시글이 없습니다.',
+        limit: 10000,
+        fuzzy: false,
+        success: { // 없으면 에러나서 추가
+            call() {
+            }
+        },
+        exclude: ['Welcome']
+    });
+</script>
+
+<style>
+    #search-bar {
+        margin: 1rem auto;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        padding: 0 20px;
+    }
+
+    #search-bar #search-input {
+        display: inline-block;
+        width: calc(100% - 30px);
+        border: none;
+        line-height: 44px;
+        outline: none;
+        border-style: none;
+        margin: 0 !important;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    #results-container {
+        list-style-type: none;
+    }
+
+    #results-container li {
+        margin: 1rem 0;
+        font-weight: bold;
+    }
+</style>

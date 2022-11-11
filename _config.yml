@@ -1,7 +1,6 @@
 # External plugins
 # See http://ixti.net/software/2013/01/28/using-jekyll-plugins-on-github-pages.html for making `jekyll archives` work.
 plugins:
-  - jekyll-archives # Sorry, not GitHub pages friendly!
   - jekyll-sitemap
   - jekyll-paginate
 safe: false
@@ -29,28 +28,8 @@ inter_post_navigation: true
 highlightjs_theme: "vs2015" #"monokai-sublime"
 
 # Pagination Settings
-# https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration
-pagination:
-  enabled: true
-  per_page: 5
-  permalink: "/page/:num/"
-  sort_reverse: true
-
-# 위에는 v2 관련... 아래는 일반 페이지네이션 (깃 떄문에 ..다운그레이드 했음 ㅡㅡ...)
-paginate: 5                  # 페이징 처리 개수
+paginate: 10                  # 페이징 처리 개수
 paginate_path: "/page:num/"   # URL 규칙
-
-# Archive settings (see https://github.com/jekyll/jekyll-archives/)
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  layouts:
-    category: category-archive
-    tag: tag-archive
-  permalinks:
-    category: '/category/:name/'
-    tag: '/tag/:name/'
 
 # Disqus comments
 # disqus_shortname: bencentra
@@ -58,45 +37,15 @@ jekyll-archives:
 # Google analytics
 # ga_tracking_id: "UA-XXXX-1"
 
-# Category descriptions (for archive pages)
-# CHECKPOINT 카테고리 정의 (desc는 어디에 써지는거지)
 descriptions:
-  - cat: backend
-    desc: 백엔드 서비스 개발 메모
-    
-  - cat: frontend
-    desc: 프론트엔드 및 js css html 메모
-    
-  - cat: database
-    desc: 데이터베이스 관련 메모
-    
-  - cat: server
-    desc: 서버 웹서버 클라우드 등 서버 메모
-    
-  - cat: shell
-    desc: 리눅스 파워쉘 등 쉘에서 사용하는 것 메모
+  - BACKEND
+  - FRONTEND
+  - DATABASE
+  - SERVER
+  - SHELL
+  - CICD
+  - ETC
 
-  - cat: cicd
-    desc: 배포나 배포에 필요한 것들 메모
-
-  - cat: etc
-    desc: 기타 잡동사니 메모
-
-# Social icons and sharing options
-#
-# Social settings are used in two places:
-# * In the footer, as links to your personal profiles
-# * After each blog post for sharing widgets
-#
-# Example:
-#
-# social:
-#   - name: Twitter                         # Name of the service
-#     icon: twitter                         # Font Awesome icon to use (minus fa- prefix)
-#     username: "@TheBenCentra"             # (User) Name to display in the footer link
-#     url: https://twitter.com/TheBenCentra # URL of your profile (leave blank to not display in footer)
-#     desc: Follow me on Twitter            # Description to display as link title, etc
-#     share: true                           # Include in the "Share" section of posts
 social:
   - name: GitHub
     icon: github
