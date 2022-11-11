@@ -42,7 +42,7 @@
     return allPosts[Math.floor(Math.random() * allPosts.length)];
   }
 
-    document.addEventListener("DOMContentLoaded", function (event) {
+    (function () {
         let tags = ''
         for (let i = 0; i < 3; i++) {
             tags += randomTags() + ', '
@@ -55,7 +55,7 @@
             tags = tags.substring(2, tags.length)
 
         document.getElementById("keywords").innerHTML = tags
-    });
+    })();
 </script>
 
 <style>

@@ -76,3 +76,17 @@ code span {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
+.post_count{
+    float:right;
+    transform : scale(0.8,0.8);
+    color:#00b5c7;
+}
+
+.posts-list-title{
+    cursor:pointer;
+}
+
+.posts-list-title:hover{
+    color:rgb(74, 71, 226);
+}
