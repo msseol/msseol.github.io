@@ -24,7 +24,7 @@ cover: "/assets/header_image.jpg"
 logo: "/assets/logo.png"
 
 # Build settings
-markdown: redcarpet # gem install redcarpet
+markdown: kramdown
 inter_post_navigation: true
 highlightjs_theme: "vs2015" #"monokai-sublime"
 
