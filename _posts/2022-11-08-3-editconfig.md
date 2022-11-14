@@ -4,6 +4,7 @@ title:  ".editorconfig 예시"
 date:   2022-11-08 23:00:05
 categories: ETC
 tags: edit
+description: editorconfig 설정 예시
 ---
 
 <i class="fa-solid fa-check"></i> *팀과 협업하여 개발할때 공용으로 사용할 editorconfig 메모*
