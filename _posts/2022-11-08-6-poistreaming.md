@@ -4,10 +4,9 @@ title:  "Apache Poi Excel 스트리밍 업로드"
 date:   2022-11-08 23:00:08
 categories: BACKEND
 tags: excel poi streaming
-description: 대용량 엑셀 스트리밍 업로드 하기(with Poi)
 ---
 
-<i class="fa-solid fa-check"></i> *대용량 엑셀 업로드 시 분할 업로드 처리하기 메모*
+<i class="fa-solid fa-check"></i>*대용량 엑셀 스트리밍 업로드 하기 with Poi*
 
 ---
 
