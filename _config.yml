@@ -34,9 +34,6 @@ paginate_path: "/page:num/"   # URL 규칙
 # Disqus comments
 # disqus_shortname: bencentra
 
-# Google analytics
-# ga_tracking_id: "UA-XXXX-1"
-
 descriptions:
   - BACKEND
   - FRONTEND
