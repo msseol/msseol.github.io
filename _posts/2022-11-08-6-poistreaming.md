@@ -6,12 +6,12 @@ categories: BACKEND
 tags: excel poi streaming
 ---
 
-<i class="fa-solid fa-check"></i>*대용량 엑셀 스트리밍 업로드 하기 with Poi*
+<i class="fa-regular fa-circle-check" style="margin-right:0.7rem"></i>*대용량 엑셀 스트리밍 업로드 하기 with Poi*
 
 ---
 
 내부 툴을 개발하면서 대용량(30만 로우이상) 데이터의 엑셀을 처리해야 할 일이 있었는데, 통으로 파일을 받을 경우 메모리가 부족한 현상이 있었다.
-(서비스가 대부분 Xmx Xms 64mb 수준으로 돌아가서....) 관련해서 http 스트리밍 업로드 하는 라이브러리가 있어 적용하였다.
+(서비스가 대부분 Xmx Xms 64mb 수준으로 돌아가서....) 관련해서 http 스트리밍 업로드 하는 라이브러리가 있어 적용한 소스를 메모한다.
 
 **Maven dependency**
 
@@ -39,7 +39,8 @@ poi와 xlsx-streamer 라는 라이브러리를 사용한다.
 **ExcelReader.java**
 
 아래는 MultipartFile로 엑셀을 받아 특정 행의 값을 10000개 행씩 처리하는 예시다.   
-StreamingReader으로 Workbook을 읽어오는 부분만 자세히 보면 된다.
+StreamingReader으로 Workbook을 읽어오는 부분만 자세히 보면 된다.   
+(그 외의 부분은 본인의 서비스 로직에 맞게 구성하면 된다.)
 
 ```java
 import java.util.Arrays;
@@ -61,7 +62,6 @@ import com.monitorjbl.xlsx.StreamingReader;
 public class ExcelReader {
     protected Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    @SuppressWarnings("unchecked")
     public <T> void readExcel(MultipartFile file, Function<List<T>, Integer> func, Class<T> type) throws Exception {
 
         List<T> datas = new LinkedList<>();

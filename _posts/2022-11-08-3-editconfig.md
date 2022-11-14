@@ -6,7 +6,7 @@ categories: ETC
 tags: edit
 ---
 
-<i class="fa-solid fa-check"></i>*포맷팅을 통일해주는 .editorconfig 설정 예시*
+<i class="fa-regular fa-circle-check" style="margin-right:0.7rem"></i>*포맷팅을 통일해주는 .editorconfig 설정 예시*
 
 ---
 
