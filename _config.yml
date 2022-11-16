@@ -41,6 +41,7 @@ descriptions:
   - SERVER
   - SHELL
   - CICD
+  - SECURE
   - ETC
 
 social:

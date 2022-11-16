@@ -23,7 +23,7 @@
 
 @font-face {
     font-family: 'Vera';
-    src:  url('assets/Vera.ttf') format('ttf');
+    src: url('assets/Vera.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -77,21 +77,27 @@ code span {
     white-space: nowrap;
 }
 
-.post_count{
-    float:right;
-    transform : scale(0.8,0.8);
-    color:#00b5c7;
+.post_count {
+    float: right;
+    transform: scale(0.8, 0.8);
+    color: #00b5c7;
 }
 
-.posts-list-title{
-    cursor:pointer;
+.posts-list-title {
+    cursor: pointer;
 }
 
-.posts-list-title:hover{
-    color:rgb(74, 71, 226);
+.posts-list-title:hover {
+    color: rgb(74, 71, 226);
+}
+
+a + em {
+    display: block;
+    text-align: center;
+    font-size:0.8rem;
 }
 
 
-
-
-.color1{color:#ff3324}
+.color1 {
+    color: #ff3324
+}
