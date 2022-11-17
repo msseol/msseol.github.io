@@ -15,24 +15,38 @@
 @import "typography";
 
 @font-face {
-    font-family: 'Chosunilbo_myungjo';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+    font-family: 'Vera';
+    src: url('../../assets/Vera.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Vera';
-    src: url('assets/Vera.ttf') format('ttf');
+    font-family: 'netmarbleM';
+    src: url('../../assets/netmarbleM.ttf') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'netmarbleL';
+    src: url('../../assets/netmarbleL.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* css override */
 
 * {
-    font-family: 'Chosunilbo_myungjo' !important
+    font-family: 'netmarbleL' !important
+}
+
+h1,
+h2,
+h3,
+h4 {
+
+    font-family: 'netmarbleM' !important
 }
 
 code,
@@ -91,19 +105,21 @@ code span {
     color: rgb(74, 71, 226);
 }
 
-a + em {
+a+em {
     display: block;
     text-align: center;
-    font-size:0.8rem;
+    font-size: 0.8rem;
 }
 
 
 .color1 {
     color: #ff3324
 }
+
 .color2 {
     color: #3f19b1
 }
+
 .color3 {
     color: #19b149
 }
