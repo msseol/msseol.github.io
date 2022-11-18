@@ -17,6 +17,8 @@ Java 계열에서 프론트 페이지는 JSP/Thymeleaf 등의 서버 템플릿 �
    
 예전 구조에서 카카오나 구글과 같은 외부 **Oauth**를 연동할 땐 **redirect** 처리라든지 **token** 처리라든지 처리 주체가 백 프론트 합쳐진 단일 주체라 큰 문제가 없었는데 분리된 구조에서는 각 처리 주체의 선정이 모호하여 이참에 정리하였다. 이 과정이 공식화 된 정답은 아닐 수 있다.
 
+---
+
 #### 대강의 프로세스 과정
 
 <a href="https://www.plantuml.com/plantuml/png/TP9V2z9G6CRlzobUz6OR_RbU5w6BXBgA4hmUsn57jSKs8ReoMa7QXP6IsYOJGWeCvXzjKNwXdNVVeQDDt56wEXVFy_oUPo-hk9xcUEtdpuH7x3LryuLcUL3A1ZwTHLatmSy3-YaeWUP2xJwK5QLMKnJUYs62yn3zWAvy4SS9tNMaOw3w1ChDfc4GmWTel2nWrJDMO1KtxnvoTu3EWlHdmjY0yHwoKOAxG60AqvdhKiSeIDVR_-IZ8LrlsEFJtgA8O68QTt1_c2BAShNjjMp7VALvfct1FTiWiYpXk0FPy5lwUmIFYM4wHFVo5lKISMfGJoDucGq2LgBhn7MXRZybbYm3JWQu-i56dOZN5Xe7QVAUex9J__An-nLmsiSl_PmYDaolzIyc5OdNzl0ZxMr5yl8Mj5tYF32adAxoXxqDsUG32nm-OVeMS3MYyyMDCozx5sMlOy0t8VhB8-vXevwpyWlprhoPEo3lmE0FwozE3ZSu-IvKY6Mmd_Gl" data-lightbox="falcon9-large" data-title="플로우">
