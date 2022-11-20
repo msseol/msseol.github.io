@@ -21,8 +21,8 @@ Java 계열에서 프론트 페이지는 JSP/Thymeleaf 등의 서버 템플릿 �
 
 #### 대강의 프로세스 과정
 
-<a href="https://www.plantuml.com/plantuml/png/TP9V2z9G6CRlzobUz6OR_RbU5w6BXBgA4hmUsn57jSKs8ReoMa7QXP6IsYOJGWeCvXzjKNwXdNVVeQDDt56wEXVFy_oUPo-hk9xcUEtdpuH7x3LryuLcUL3A1ZwTHLatmSy3-YaeWUP2xJwK5QLMKnJUYs62yn3zWAvy4SS9tNMaOw3w1ChDfc4GmWTel2nWrJDMO1KtxnvoTu3EWlHdmjY0yHwoKOAxG60AqvdhKiSeIDVR_-IZ8LrlsEFJtgA8O68QTt1_c2BAShNjjMp7VALvfct1FTiWiYpXk0FPy5lwUmIFYM4wHFVo5lKISMfGJoDucGq2LgBhn7MXRZybbYm3JWQu-i56dOZN5Xe7QVAUex9J__An-nLmsiSl_PmYDaolzIyc5OdNzl0ZxMr5yl8Mj5tYF32adAxoXxqDsUG32nm-OVeMS3MYyyMDCozx5sMlOy0t8VhB8-vXevwpyWlprhoPEo3lmE0FwozE3ZSu-IvKY6Mmd_Gl" data-lightbox="falcon9-large" data-title="플로우">
-  <img src="https://www.plantuml.com/plantuml/png/TP9V2z9G6CRlzobUz6OR_RbU5w6BXBgA4hmUsn57jSKs8ReoMa7QXP6IsYOJGWeCvXzjKNwXdNVVeQDDt56wEXVFy_oUPo-hk9xcUEtdpuH7x3LryuLcUL3A1ZwTHLatmSy3-YaeWUP2xJwK5QLMKnJUYs62yn3zWAvy4SS9tNMaOw3w1ChDfc4GmWTel2nWrJDMO1KtxnvoTu3EWlHdmjY0yHwoKOAxG60AqvdhKiSeIDVR_-IZ8LrlsEFJtgA8O68QTt1_c2BAShNjjMp7VALvfct1FTiWiYpXk0FPy5lwUmIFYM4wHFVo5lKISMfGJoDucGq2LgBhn7MXRZybbYm3JWQu-i56dOZN5Xe7QVAUex9J__An-nLmsiSl_PmYDaolzIyc5OdNzl0ZxMr5yl8Mj5tYF32adAxoXxqDsUG32nm-OVeMS3MYyyMDCozx5sMlOy0t8VhB8-vXevwpyWlprhoPEo3lmE0FwozE3ZSu-IvKY6Mmd_Gl" title="플로우">
+<a href="/assets/images/9_1.png" data-lightbox="falcon9-large" data-title="플로우">
+  <img src="/assets/images/9_1.png" title="플로우">
 </a>
 <em>그림1. 각 역할 별 플로우 정리</em>
 

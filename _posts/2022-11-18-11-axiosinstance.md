@@ -13,7 +13,17 @@ tags: axios frontend vuejs
 
 최근에 회사 내부툴을 개발하면서 **axios** 관련된 문제를 겪었다.   
    
-프론트엔드에서 **Backend API**와의 통신으로 **accessToken** 형태의 API key 값을 사용하고 있었고 **refreshToken**로 토큰이 자동 갱신되는 형태로 만들었는데, 토큰 갱신 처리 이후에도 **store**의 **accessToken**값은 바뀌었지만 비동기 요청 시 axios에 설정된 **Authorization header**는 변화가 없는 현상이 발생했다.   
+프론트엔드에서 **Backend API**와의 통신으로 **accessToken** 형태의 API key 값을 사용하고 있었고 **refreshToken**로 토큰이 자동 갱신되는 형태로 만들었다.   
+   
+그런데 토큰 갱신 처리 이후에도 **store**의 **accessToken**값은 바뀌었지만 비동기 요청 시 axios에 설정된 **Authorization header**는 변화가 없는 현상이 발생했다.   
+
+<a href="/assets/images/11_1.png" data-lightbox="falcon9-large" data-title="플로우">
+  <img style="width:50%; min-width:200px" src="/assets/images/11_1.png" title="플로우">
+</a>
+<em>그림1. 문제의 과정</em>
+
+그림에서 보듯이 토큰을 B로 갱신 후에도 A로 보내게 되는 현상이었다.
+
    
 JWT기반의 토큰 인증 방식이라 과거의 토큰이 살아있는 한 오류가 발생하지 않기에 그동안 찾을 수 없었던 문제였다. 30분의 삽질 끝에 원인과 해결 방법을 찾아서 메모로 남긴다.
 
@@ -67,7 +77,9 @@ app.config.globalProperties.$axios = createAxios(process.env.NODE_ENV, store)
 
 #### 문제점
  
-여튼 결론부터 말하면 refreshToken을 통해 갱신처리가 안된 이유는 <span class="color1">**createAxios** 하면서 설정했던 **options**이 초기에 한번만</span> 설정되었던게 문제였다. *(어쩐지 새로고침 안하면 토큰이 안먹는 경우가 종종 있었다.)*  당연히 동적으로 생성될거라고 잘못 생각하고 있었다. 문제를 해결하기 위해 처음에는 매번 axios 호출시마다 header를 다음과 같이 설정해 주어야 겠다고 생각했으나, 너무나도 귀찮고 번거로운 일이였다.
+여튼 결론부터 말하면 refreshToken을 통해 갱신처리가 안된 이유는 <span class="color1">**createAxios** 하면서 설정했던 **options**이 초기에 한번만</span> 설정되었던게 문제였다. *(어쩐지 새로고침 안하면 토큰이 안먹는 경우가 종종 있었다.)*     
+   
+당연히 동적으로 생성될거라고 잘못 생각하고 있었다. 문제를 해결하기 위해 처음에는 매번 axios 호출시마다 header를 다음과 같이 설정해 주어야 겠다고 생각했으나, 너무나도 귀찮고 번거로운 일이였다.
 
 ```javascript
 this.$axios.get(URL, {
