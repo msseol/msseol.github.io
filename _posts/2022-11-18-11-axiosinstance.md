@@ -46,7 +46,7 @@ const createAxios = (env, store) => {
         withCredentials: true,
         headers: {
             'Access-Control-Allow-Origin': '*',
-            'Authorization': {{ access token from store }}
+            'Authorization': ...access token from store...
         }
     }
 
@@ -117,7 +117,7 @@ const createAxios = (env, store) => {
         function (config) {
 
             let authorization = config.headers['Authorization']
-            if (authorization == null || authorization == undefined) config.headers['Authorization'] = {{ access token from store }}
+            if (authorization == null || authorization == undefined) config.headers['Authorization'] = ...access token from store...
 
             return config;
         },
