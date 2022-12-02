@@ -18,7 +18,7 @@ tags: jenkins git cicd tag
 
 ### 젠킨스 설정
 
-Git + 젠킨스 연동 및 배포 설정은 미리 되어있다고 가정하고 설정을 시작한다.
+Git + 젠킨스 연동 및 배포 설정은 미리 되어있다고 가정하고 설정을 시작한다. ([테스트용 Gitlab + Jenkins 생성하기][jenkinsgitlab])
 
 **1. Git parameter 플러그인 설치**
 
@@ -76,3 +76,4 @@ Checking out Revision bf1d6c48ef938fcd283f31583babd963553d3baa (v1.0.0)
  > git checkout -f bf1d6c48ef938fcd283f31583babd963553d3baa # timeout=10
 ```
 
+[jenkinsgitlab]: /cicd/2022/12/02/15-jenkinsgitlab.html
