@@ -3,6 +3,7 @@ layout: post
 title:  "까먹는 명령어 메모"
 date:   2022-11-01 22:00:00
 categories: ETC
+desc: "가끔 필요한데 까먹어서 찾게되는 명령어들 모아보기"
 tags: memo
 ---
 

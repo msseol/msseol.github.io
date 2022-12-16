@@ -111,6 +111,16 @@ a+em {
     font-size: 0.8rem;
 }
 
+.post-date {
+    color: rgb(119, 119, 119);
+    font-size: 0.8rem;
+    float: right;
+}
+
+.page-number {
+    font-weight: bold;
+    color: #2980b9;
+}
 
 .color1 {
     color: #ff3324
@@ -126,4 +136,14 @@ a+em {
 
 .color4 {
     color: #8b0e87
+}
+
+.color5 {
+    color: #dd890b
+}
+
+@media screen and (max-width: 900px) {
+    .post-date {
+        display:none;
+    }
 }
