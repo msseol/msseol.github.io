@@ -28,7 +28,7 @@ tags: query mysql database db mariadb mssql
 ```sql
 SELECT *
 FROM `table` 
-WHERE `start` < :end AND `end` > :start
+WHERE `start` < :end AND `end` > :start  # 동일한 날짜도 포함시키려면 부등호만 바꾸면 된다.
 ```
 
 쿼리가 의심되긴 하지만 실제로 돌려보면 아주 간단하게 테이블 내의 기간이 포함되는 항목들을 찾아낼 수 있는 것을 볼 수 있다.    
