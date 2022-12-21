@@ -122,6 +122,14 @@ a+em {
     color: #2980b9;
 }
 
+.footnotes{
+    color: #20157e;
+    font-size:.8rem;
+    border-top: 1px solid #ddd;
+    padding-top:1rem;
+}
+
+/* colors */
 .color1 {
     color: #ff3324
 }
@@ -142,6 +150,8 @@ a+em {
     color: #dd890b
 }
 
+
+/* responsive */
 @media screen and (max-width: 900px) {
     .post-date {
         display:none;
