@@ -33,6 +33,27 @@ rename 's/.png/.jpg/' *
 curl -XPOST -H 'content-type:application/octet-stream' 'localhost/uploads?fileName=test.txt&fileExt=.txt' --data-binary @test.txt
 ```
 
+**5. pid 확인**
+
+```bash
+netstat -nao | findstr {port}
+jps -v
+ps -ef | grep {xxx}
+```
+
+**6. task 확인**
+
+```bash
+tasklist | findstr {pid}
+```
+
+**7. heap dump**
+
+```bash
+jmap -dump:format=b,file=heap.hprof pid
+java Xms2g -Xmx4g -XX:+PrintGCDetails -verbose:gc -Xloggc:./log/gc.log -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=./log -jar {jar파일명} # jar 실행시
+```
+
 ---
 
 #### Vim
