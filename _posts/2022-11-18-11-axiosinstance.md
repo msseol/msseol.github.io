@@ -77,7 +77,7 @@ app.config.globalProperties.$axios = createAxios(process.env.NODE_ENV, store)
 
 #### 문제점
  
-여튼 결론부터 말하면 refreshToken을 통해 갱신처리가 안된 이유는 <span class="color1">**createAxios** 하면서 설정했던 **options**이 초기에 한번만</span> 설정되었던게 문제였다. *(어쩐지 새로고침 안하면 토큰이 안먹는 경우가 종종 있었다.)*     
+여튼 결론부터 말하면 refreshToken을 통해 갱신처리가 안된 이유는 <span class="text-danger">**createAxios** 하면서 설정했던 **options**이 초기에 한번만</span> 설정되었던게 문제였다. *(어쩐지 새로고침 안하면 토큰이 안먹는 경우가 종종 있었다.)*     
    
 당연히 동적으로 생성될거라고 잘못 생각하고 있었다. 문제를 해결하기 위해 처음에는 매번 axios 호출시마다 header를 다음과 같이 설정해 주어야 겠다고 생각했으나, 너무나도 귀찮고 번거로운 일이였다.
 
@@ -94,7 +94,7 @@ this.$axios.get(URL, {
 
 #### 해결방법
 
-해결 방법은 생각보다 간단한데, <span class="color2">**axios interceptor**</span>를 활용하는 것이다. 우리의 기존 소스에도 이미 **Error Handling** 및 **config 제어**를 위해 적용되어 있던 항목이다. 
+해결 방법은 생각보다 간단한데, <span class="text-primary">**axios interceptor**</span>를 활용하는 것이다. 우리의 기존 소스에도 이미 **Error Handling** 및 **config 제어**를 위해 적용되어 있던 항목이다. 
 위의 소스에서 axiosInstance에 interceptor를 설정 해보자.
 
 ```javascript
@@ -136,7 +136,7 @@ const getAxios = () => axiosIns
 export { createAxios, getAxios } 
 ```
 
-생성한 **axiosInstance**에 <span class="color2">**axios interceptor**</span>를 생성했다. axios를 통해 ajax 호출 시 호출 전에 **먼저** 실행될 수 있는 영역이다. 매개변수로 받는 config는 axios 호출 파라미터 인자 중 config에 해당된다. (*config를 console에 찍어보면 더 자세히 알 수 있다.*)    
+생성한 **axiosInstance**에 <span class="text-primary">**axios interceptor**</span>를 생성했다. axios를 통해 ajax 호출 시 호출 전에 **먼저** 실행될 수 있는 영역이다. 매개변수로 받는 config는 axios 호출 파라미터 인자 중 config에 해당된다. (*config를 console에 찍어보면 더 자세히 알 수 있다.*)    
    
 여기서는 호출 시 명시적으로 **Authorization**을 설정해서 보내는 경우를 제외하고는 **store**에서 자동으로 설정될 수 있도록 설정했다.
 

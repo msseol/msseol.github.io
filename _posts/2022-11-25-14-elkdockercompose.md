@@ -135,7 +135,7 @@ networks:
     driver: bridge
 ```
 
-버전은 7버전 중 잡히는 것 아무거나 하나를 사용하였다. 8버전 부터는 기본적으로 **Security** 모드가 활성화 되었어서 초기 인증 설정이 좀 번거로운 부분이 있어서 <span class="color4">**7.14.0**</span>버전으로 진행했다. ([8버전 변경사항 보기][es8])   
+버전은 7버전 중 잡히는 것 아무거나 하나를 사용하였다. 8버전 부터는 기본적으로 **Security** 모드가 활성화 되었어서 초기 인증 설정이 좀 번거로운 부분이 있어서 <span class="text-secondary">**7.14.0**</span>버전으로 진행했다. ([8버전 변경사항 보기][es8])   
 
 해당 파일에는 아래와 같이 3개의 설정 파일을 마운트 해놓은 상태이며, 테스트 구성이기에 메모리는 적게 할당했다.
 
@@ -206,8 +206,8 @@ output.logstash:
   hosts: ["logstash:5044"]
 ```
 
-**beat**의 경우 별도의 설정 없이 그냥 동작시킬 경우 **kibana**가 늦게 뜨는 관계로 실패하고 종료되버리는데, 중간에 지정한 <span class="color1">setup</span>옵션을 통해 자동으로 재구동 되도록 하여 **kibana**의 구동을 확인하게 한다.   
-만약 **logstash**를 사용하지 않을땐 <span class="color1">output.elasticsearch</span> 설정으로 바로 전송할 수 있다.
+**beat**의 경우 별도의 설정 없이 그냥 동작시킬 경우 **kibana**가 늦게 뜨는 관계로 실패하고 종료되버리는데, 중간에 지정한 <span class="text-danger">setup</span>옵션을 통해 자동으로 재구동 되도록 하여 **kibana**의 구동을 확인하게 한다.   
+만약 **logstash**를 사용하지 않을땐 <span class="text-danger">output.elasticsearch</span> 설정으로 바로 전송할 수 있다.
 
 #### 구동
 
@@ -232,7 +232,7 @@ sysctl -w vm.max_map_count=262144
 </a>
 <em>그림1. Docker Desktop 화면</em>
 
-**filebeat.yml**에서 설정했던 <span class="color1">filebeat.inputs</span> 항목에서 지정한 *logs* 폴더 경로에 **.log*로 실제 텍스트 파일을 저장해보자. 별도의 `filter` 설정이 없어서 저장된 텍스트가 그대로 `message`에 들어가지만 저장 자체는 정상적으로 잘 되는 것을 볼 수 있다.   
+**filebeat.yml**에서 설정했던 <span class="text-danger">filebeat.inputs</span> 항목에서 지정한 *logs* 폴더 경로에 **.log*로 실제 텍스트 파일을 저장해보자. 별도의 `filter` 설정이 없어서 저장된 텍스트가 그대로 `message`에 들어가지만 저장 자체는 정상적으로 잘 되는 것을 볼 수 있다.   
 
 #### Kibana 확인
 
@@ -243,9 +243,9 @@ sysctl -w vm.max_map_count=262144
 
 #### 기타
 
-<span class="color3">*client_inactivity_timeout: 86400*</span>
+<span class="text-success">*client_inactivity_timeout: 86400*</span>
 
-처음 구성했을 때 **filebeat -> logstash** 전송이 되지 않고 **connection** 관련 <span class="color1">오류</span>가 계속 발생했다.   
+처음 구성했을 때 **filebeat -> logstash** 전송이 되지 않고 **connection** 관련 <span class="text-danger">오류</span>가 계속 발생했다.   
 **network** 구성 문제인가 싶었지만 정상적이었고 이것 저것 해보다 보니 **timeout** 관련 문제였고 해당 설정값을 통해 해결하게 되었다.
 
 

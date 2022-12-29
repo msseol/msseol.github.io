@@ -9,7 +9,7 @@ tags: elasticsearch mongodb monstache database
 
 <i class="fa-regular fa-circle-check" style="margin-right:0.7rem"></i>*Mongodb + Elasticsearch로 구성된 프로젝트에서 데이터 동기화를 위해 설정했단 것들*
 
-<i class="fa-regular fa-circle-check" style="margin-right:0.7rem; color:red"></i><span class="color1">*오래전에 작성된 메모임을 감안*</span>
+<i class="fa-regular fa-circle-check" style="margin-right:0.7rem; color:red"></i><span class="text-danger">*오래전에 작성된 메모임을 감안*</span>
 
 ---
 
@@ -21,10 +21,10 @@ Elasticsearch와 mongodb를 동기화하기 위해 몇가지 찾아본 것들을
 |이름|방식|비고|
 |---|---|---|
 |**Logstash & logstash-input-mongodb**|insert데이터 동기화|수정/삭제도 동기화가 필요해서 제외|
-|**mongolastic**|배치방식|java jar형태로 동작하는데 <span class="color1">실시간성이 떨어짐</span>|
-|**mongo-connector**|?|es v1.3 수준의 <span class="color1">낮은버전만 지원</span>|
-|**river-mongodb**|?|es v1.x 까지만 지원<span class="color1">(리뉴얼 전 사용하던 것)</span>|
-|**monstache**|query log방식|<span class="color3">실시간, CUD도 가능하여 서비스에 적합하다 판단.</span>|
+|**mongolastic**|배치방식|java jar형태로 동작하는데 <span class="text-danger">실시간성이 떨어짐</span>|
+|**mongo-connector**|?|es v1.3 수준의 <span class="text-danger">낮은버전만 지원</span>|
+|**river-mongodb**|?|es v1.x 까지만 지원<span class="text-danger">(리뉴얼 전 사용하던 것)</span>|
+|**monstache**|query log방식|<span class="text-success">실시간, CUD도 가능하여 서비스에 적합하다 판단.</span>|
 
 표에서 보듯이 기존의 사용하던 river를 더이상 사용할 수 없게 되면서 **monstache**가 **전체읽기/계속읽기/문서내용기반의 인덱스분리** 등 다양한 기능을 지원하여 가장 적합한 솔루션이라고 판단했다.   
 

@@ -54,6 +54,20 @@ jmap -dump:format=b,file=heap.hprof pid
 java Xms2g -Xmx4g -XX:+PrintGCDetails -verbose:gc -Xloggc:./log/gc.log -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=./log -jar {jar파일명} # jar 실행시
 ```
 
+**8. 웹 서버 관련**
+
+-  SELinux 폴더권한 403 ([참조][link])
+```bash
+chcon -Rt httpd_sys_conmtent_t {폴더}
+```
+
+- Nginx proxy 허용
+```bash
+setsebool -P httpd_can_network_connect true
+```
+
+
+
 ---
 
 #### Vim
@@ -81,3 +95,10 @@ gg=G
 ---
 
 #### Git
+
+
+
+
+
+
+[link]: https://www.lesstif.com/system-admin/selinux-httpd_sys_rw_content_t-boolean-24445086.html

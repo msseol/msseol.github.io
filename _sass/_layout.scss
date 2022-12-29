@@ -28,7 +28,7 @@ ul.default {
 }
 
 code {
-	background-color: #eee;
+	background-color: #eef2ff;
 	display: inline-block;
 	border-radius: 3px;
 	padding: 0 3px;
@@ -451,4 +451,18 @@ pre code.hljs {
 			text-decoration: underline;
 		}
 	}
+}
+
+
+
+code.hljs {
+    background-color: #283848;
+}
+
+.hljs-comment{
+    color: #40cf4b !important;
+}
+
+.hljs-meta{
+	color: #d9d312 !important;
 }

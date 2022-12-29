@@ -134,7 +134,7 @@ Git 연동에 Parameter를 사용할 예정이면 **Git Parameter**와 같은 �
 
 **4. Gitlab 연동**
 
-젠킨스 잡 생성 후 소스 코드 관리를 **Git**으로 선택하자. 여기서 *Repository URL*의 경우 보통은 사내 또는 외부에 설정된 Git 레포지토리의 주소지만, 테스트용 환경으로 도커에 구축했기 때문에 <span class="color1">Gitlab 도커 컨테이너 이름</span>(위에서 생성했던 이름)으로 호스트를 적으면 된다. *Credentials* 영역에는 위에서 생성한 인증 정보가 리스트업 되며 이제부턴 **Git**을 통해 소스코드를 관리하고 빌드할 수 있게 됬다.   
+젠킨스 잡 생성 후 소스 코드 관리를 **Git**으로 선택하자. 여기서 *Repository URL*의 경우 보통은 사내 또는 외부에 설정된 Git 레포지토리의 주소지만, 테스트용 환경으로 도커에 구축했기 때문에 <span class="text-danger">Gitlab 도커 컨테이너 이름</span>(위에서 생성했던 이름)으로 호스트를 적으면 된다. *Credentials* 영역에는 위에서 생성한 인증 정보가 리스트업 되며 이제부턴 **Git**을 통해 소스코드를 관리하고 빌드할 수 있게 됬다.   
 
 
 <a href="/assets/images/15_5.jpg" data-lightbox="falcon9-large" data-title="Job 설정">

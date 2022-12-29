@@ -126,38 +126,42 @@ a+em {
     color: #2980b9;
 }
 
-.footnotes{
+.footnotes {
     color: #20157e;
-    font-size:.8rem;
+    font-size: .8rem;
     border-top: 1px solid #ddd;
-    padding-top:1rem;
+    padding-top: 1rem;
 }
 
 /* colors */
-.color1 {
+.text-danger {
     color: #ff3324
 }
 
-.color2 {
-    color: #3f19b1
+.text-primary {
+    color: #2a0d80
 }
 
-.color3 {
+.text-success {
     color: #19b149
 }
 
-.color4 {
+.text-secondary {
     color: #8b0e87
 }
 
-.color5 {
-    color: #dd890b
+.text-warning {
+    color: #eca12f
+}
+
+.text-info {
+    color: #0b90dd
 }
 
 
 /* responsive */
 @media screen and (max-width: 900px) {
     .post-date {
-        display:none;
+        display: none;
     }
 }
