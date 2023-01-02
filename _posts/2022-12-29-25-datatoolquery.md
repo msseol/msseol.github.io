@@ -28,25 +28,25 @@ tags: game excel data
 해당 쿼리를 통해 **테이블 존재 여부**, **컬럼명**이나 **타입**을 비교하여 데이터를 검증할 수 있다. 이런 류의 스키마 조회 쿼리는 검색해보면 많이 나오므로 간단해 보이는 것으로 사용해도 된다.
 
 ```
-select t.[name] as TableName,  
-substring(column_names, 1, len(column_names)-1) as [Columns] 
-from sys.objects t WITH(NOLOCK) 
-left outer join sys.indexes i WITH(NOLOCK) 
-on t.object_id = i.object_id 
-cross apply (
-    select col.[name] + ',' 
-    from sys.index_columns ic WITH(NOLOCK) 
-    inner join sys.columns col WITH(NOLOCK) 
-        on ic.object_id = col.object_id 
-        and ic.column_id = col.column_id 
-    where ic.object_id = t.object_id 
-        and ic.index_id = i.index_id 
-    order by col.column_id 
-    for xml path ('') 
-) D (column_names) 
-where is_unique = 1 
-and t.is_ms_shipped <> 1 
-and i.[type] = 2
+SELECT T.[NAME] AS TABLENAME,  
+SUBSTRING(COLUMN_NAMES, 1, LEN(COLUMN_NAMES)-1) AS [COLUMNS] 
+FROM SYS.OBJECTS T WITH(NOLOCK) 
+LEFT OUTER JOIN SYS.INDEXES I WITH(NOLOCK) 
+ON T.OBJECT_ID = I.OBJECT_ID 
+CROSS APPLY (
+    SELECT COL.[NAME] + ',' 
+    FROM SYS.INDEX_COLUMNS IC WITH(NOLOCK) 
+    INNER JOIN SYS.COLUMNS COL WITH(NOLOCK) 
+        ON IC.OBJECT_ID = COL.OBJECT_ID 
+        AND IC.COLUMN_ID = COL.COLUMN_ID 
+    WHERE IC.OBJECT_ID = T.OBJECT_ID 
+        AND IC.INDEX_ID = I.INDEX_ID 
+    ORDER BY COL.COLUMN_ID 
+    FOR XML PATH ('') 
+) D (COLUMN_NAMES) 
+WHERE IS_UNIQUE = 1 
+AND T.IS_MS_SHIPPED <> 1 
+AND I.[TYPE] = 2
 ```
 
 > mysql도 INFORMATION_SCHEMA를 참조하면 된다.
