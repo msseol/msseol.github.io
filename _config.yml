@@ -28,7 +28,7 @@ inter_post_navigation: true
 highlightjs_theme: "vs2015" #"monokai-sublime"
 
 # Pagination Settings
-paginate: 10                  # 페이징 처리 개수
+paginate: 9                  # 페이징 처리 개수
 paginate_path: "/page:num/"   # URL 규칙
 
 # Disqus comments

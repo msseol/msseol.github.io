@@ -4,6 +4,7 @@ title:  ".editorconfig 예시"
 date:   2022-11-08 23:00:05
 categories: ETC
 tags: edit
+cover: 2.png
 ---
 
 <i class="fa-regular fa-circle-check" style="margin-right:0.7rem"></i>*포맷팅을 통일해주는 .editorconfig 설정 예시*

@@ -5,6 +5,7 @@ date:   2022-11-01 00:01:03
 categories: ETC
 desc: "Dockerfile에 관련된 명령어들을 참고하여 기억할 만한 것들 메모 모아보기"
 tags: dockerfile
+cover: docker.png
 ---
 
 #### FROM

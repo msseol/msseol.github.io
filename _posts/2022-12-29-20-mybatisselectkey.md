@@ -5,6 +5,7 @@ date:   2022-12-29 00:01:01
 categories: BACKEND
 desc: Mybatis 관련 selectkey memo 복붙
 tags: spring mybatis sql
+cover: spring.png
 ---
 
 

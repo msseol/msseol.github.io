@@ -4,6 +4,7 @@ title:  "ObjectMapper 전역 설정"
 date:   2022-12-29 00:01:03
 categories: BACKEND
 tags: spring objectmapper
+cover: spring.png
 ---
 
 Spring으로 API 개발하면서 자주 사용하게 되는 **ObjectMapper**를 기본값이 아닌 설정으로 사용할 때 설정하는 방법이다. 간혹 매번 `new ObjectMapper()` 해서 사용하는 사람들이 있는데..(엄청 많음) 

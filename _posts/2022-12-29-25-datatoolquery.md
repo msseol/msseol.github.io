@@ -4,6 +4,8 @@ title:  "게임 기획 데이터 관리 프로세스 정리"
 date:   2022-12-29 00:01:09
 categories: DATABASE
 tags: game excel data
+cover: 25_1.png
+side: true
 ---
 
 <i class="fa-regular fa-circle-check" style="margin-right:0.7rem"></i>*게임 엑셀 데이터를 디비 적용 시 필요한 것들에 대한 정리*

@@ -100,7 +100,7 @@ pre code.hljs {
 	.scrim {
 		padding: 1em .25em;
 		&.has-cover {
-			background-color: rgba(0,0,0,0.2);
+			background-color: rgba(0,0,0,0.3);
 			padding: 2em .5em !important;
 			@include media($tablet) {
 				padding: 3em .5em !important;

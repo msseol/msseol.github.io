@@ -4,6 +4,8 @@ title:  "Jenkins + Git 태그 기준으로 빌드하기"
 date:   2022-11-08 23:00:08
 categories: CICD
 tags: jenkins git cicd tag
+cover: 6.jpg
+side: true
 ---
 
 <i class="fa-regular fa-circle-check" style="margin-right:0.7rem"></i>*Jenkins Git 태그 기준으로 빌드하기*

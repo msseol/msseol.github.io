@@ -4,6 +4,7 @@ title:  "Frontend Backend 분리된 환경에서 Oauth 연동하기"
 date:   2022-11-16 00:00:00
 categories: SECURE
 tags: frontend backend secure oauth sso
+cover: 9_1.png
 ---
 
 

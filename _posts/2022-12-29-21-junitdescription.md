@@ -4,6 +4,7 @@ title:  "Spring junit Test"
 date:   2022-12-29 00:01:02
 categories: BACKEND
 tags: spring test junit
+cover: spring.png
 ---
 
 <i class="fa-regular fa-circle-check" style="margin-right:0.7rem"></i>*Spring Test관련 메모 복제하여 정리 ([원본 출처][copyfrom])*

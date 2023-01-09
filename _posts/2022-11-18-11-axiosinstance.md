@@ -4,6 +4,7 @@ title:  "Axios 동적으로 Global headers 처리하기"
 date:   2022-11-18 00:00:01
 categories: FRONTEND
 tags: axios frontend vuejs
+cover: 11_1.png
 ---
 
 

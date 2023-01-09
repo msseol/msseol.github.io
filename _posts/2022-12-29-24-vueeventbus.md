@@ -4,6 +4,7 @@ title:  "Vue siblings component간 데이터 전달하기"
 date:   2022-12-29 00:01:07
 categories: FRONTEND
 tags: vue frontend component
+cover: vue.png
 ---
 
 

@@ -4,6 +4,8 @@ title:  "Docker를 이용한 Elasticsearch, Logstash, Kibana 환경 구축"
 date:   2022-11-25 12:01:00
 categories: SERVER
 tags: elasticsearch logstash kibana filebeat
+cover: 14_1.jpg
+side: true
 ---
 
 <i class="fa-regular fa-circle-check" style="margin-right:0.7rem"></i>*Docker compose로 로컬에 ELK 환경을 구성하는 과정 메모*

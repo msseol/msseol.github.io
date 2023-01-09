@@ -4,6 +4,7 @@ title:  "Elasticsearch와 Mongodb 동기화하기"
 date:   2022-11-20 00:00:01
 categories: DATABASE
 tags: elasticsearch mongodb monstache database
+cover: es_with_mongo.png
 ---
 
 

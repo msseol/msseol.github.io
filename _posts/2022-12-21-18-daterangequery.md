@@ -4,6 +4,7 @@ title:  "두 날짜 사이의 겹치는 기간 쿼리로 쉽게 구현하기"
 date:   2022-12-21 00:01:01
 categories: DATABASE
 tags: query mysql database db mariadb mssql
+cover: sql.png
 ---
 
 보통 <span class="text-danger">이벤트</span>나 <span class="text-danger">예약 시스템</span> 등을 구현할 때 중복한 기간에 포함되지 않게 구현해야 하는 경우가 종종 있었다. 예를 들어 **10월1일 ~ 10월10일**까지 등록되어 있는 이벤트가 있다면,

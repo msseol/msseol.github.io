@@ -4,6 +4,7 @@ title:  "Vue3에서 Apexchart 사용하기"
 date:   2023-01-09 00:00:00
 categories: FRONTEND
 tags: vue vue3 chart apexchart
+cover: vue.png
 ---
 
 <i class="fa-regular fa-circle-check" style="margin-right:0.7rem"></i>*Vue3에서 ApexChart 사용 기초 메모*

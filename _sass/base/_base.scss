@@ -86,6 +86,27 @@ code span {
     box-shadow: none;
 }
 
+.image-wrap {
+    width: 100%;
+    border: 1px solid rgb(209, 221, 245);
+    vertical-align: middle;
+    min-height: 12rem;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:100%;
+}
+
+.image-wrap.side{
+    background-position: 0% 0%;
+    background-size: auto;
+}
+
+.image-wrap.full{
+    opacity:0.6;
+    background-size:100%;
+}
+
 #keywords {
     color: #97a7d5;
     width: 95%;
@@ -158,10 +179,38 @@ a+em {
     color: #0b90dd
 }
 
+.post-list li {
+    position: relative;
+    transition: 1s linear color;
+}
+
+.post-list li h4 {
+    color: #1a3d8b;
+    transition: 0.3s linear color;
+}
+
+.post-list li:hover {
+    cursor: pointer;
+}
+
+.post-date {
+    position: absolute;
+    bottom: 0px;
+    right: 0.5rem;
+}
+
+.post-list li:hover h4 {
+    color: rgb(0, 119, 255);
+}
 
 /* responsive */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
     .post-date {
         display: none;
+    }
+
+    .post-list li {
+        width: 100% !important;
+        font-size: 0.9rem !important;
     }
 }

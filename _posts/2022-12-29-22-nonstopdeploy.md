@@ -4,6 +4,7 @@ title:  "Spring actuator를 활용한 무중단 배포"
 date:   2022-12-29 00:01:05
 categories: CICD
 tags: spring deploy actuator
+cover: spring.png
 ---
 
 <i class="fa-regular fa-circle-check" style="margin-right:0.7rem"></i>*Spring actuator를 활용한 무중단 배포 프로세스 예시 (with Nginx)*

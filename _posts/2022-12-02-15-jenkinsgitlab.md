@@ -4,6 +4,8 @@ title:  "Gitlab과 Jenkins 테스트 환경 구축하기"
 date:   2022-12-02 00:01:00
 categories: CICD
 tags: jenkins gitlab docker deploy
+cover: 15_4.jpg
+side: true
 ---
 
 내부적으로 젠킨스를 테스트 해야 할 일이 있었는데, 마음대로 만들고 수정하고 다운받고 하기에는 사내 사용하고 있는 젠킨스에서 하기에는 조금 꺼리는 부분이 있었다. 
