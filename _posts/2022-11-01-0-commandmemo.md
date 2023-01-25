@@ -93,6 +93,15 @@ gg=G
 
 #### PowerShell
 
+**1. 포트 점유 PID 찾기 및 kill 처리**
+
+```bash
+netstat -ano | findstr :6100
+
+#ex) 8736 PID Kill
+taskkill /F /PID '8736'
+````
+
 ---
 
 #### Git
