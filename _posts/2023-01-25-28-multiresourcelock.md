@@ -54,7 +54,7 @@ In-Memory DB인 redis를 이용하는 방식이다. 2가지 정도의 방식이 
 
 **INCR Key**
 
-redis는 싱글쓰레드 기반이며 모든 명령어는 queue에 담겨 순차적으로 진행됩니다. INCR 명령어 사용시 atomic value 여부를 고민할 필요가 없습니다. 자세한 사용법은 레디스_공식_문서를 참고한다.
+redis는 싱글쓰레드 기반이며 모든 명령어는 queue에 담겨 순차적으로 진행된다. INCR 명령어 사용시 atomic value 여부를 고민할 필요가 없다. 자세한 사용법은 레디스 공식 문서를 참고한다.
 
 ```bash
 127.0.0.1:6379> set unique_key 0
