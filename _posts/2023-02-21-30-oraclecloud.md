@@ -185,6 +185,10 @@ CREATE USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY '{pwd}';
 
 ---
 
+<span class="text-danger">~**약 일주일 사용하고 나니 계정의 테넨스가 비활성 되며 모든 인스턴스가 날라갔다... 무료 제공 항목만 사용했는데, 역시 오라클인걸까? 계정 자체가 맛가버렸다... 하하**~</span>
+
+---
+
 #### 참조
 
 [외부 접속이 가능한 MariaDB 서버 구축기][ref1]   
