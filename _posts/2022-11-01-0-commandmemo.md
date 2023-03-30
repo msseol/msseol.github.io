@@ -91,6 +91,18 @@ gg=G
 
 ---
 
+#### Git
+
+**1. 유저 정보 초기화 & 저장**
+
+ldap이 수시로 바뀌어서 귀찮을 때가 있어서 메모
+```bash
+git config --system --unset credential.helper # 초기화
+git config credential.helper store # 저장
+```
+
+---
+
 #### PowerShell
 
 **1. 포트 점유 PID 찾기 및 kill 처리**
@@ -101,14 +113,5 @@ netstat -ano | findstr :6100
 #ex) 8736 PID Kill
 taskkill /F /PID '8736'
 ````
-
----
-
-#### Git
-
-
-
-
-
 
 [link]: https://www.lesstif.com/system-admin/selinux-httpd_sys_rw_content_t-boolean-24445086.html
