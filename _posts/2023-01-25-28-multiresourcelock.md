@@ -46,8 +46,6 @@ public interface MyService{
 }
 ```
 
-기존에 생성된 데이터가 해당 숫자와 충돌할 가능성을 생각하여 반려하였습니다만, 처음부터 설계 했더라면 UUID 도입을 적극 고려했을 것 같다.
-
 #### Redis
 
 In-Memory DB인 redis를 이용하는 방식이다. 2가지 정도의 방식이 있다.
@@ -114,7 +112,8 @@ ResultSet resultSet = statement.executeQuery("SELECT GET_LOCK('unique', 3)");
 statement.execute("SELECT RELEASE_LOCK('unique')");
 ```
 
-주의 할 점은 반드시 RELEASE_LOCK 을 호출해야 한다는 점 이다. 만약 호출하지 않고 connection을 끊거나 thread 종료시 kill 명령어등을 사용하여 해당 락을 직접 제거 해야 한다. 따라서 spring이나 dbcp 등 에서 사용할 경우 exception 발생시에 해당 connection에서 RELEASE_LOCK 을 호출하도록 작성한다.
+주의 할 점은 반드시 RELEASE_LOCK 을 호출해야 한다는 점 이다. 만약 호출하지 않고 connection을 끊거나 thread 종료시 kill 명령어등을 사용하여 해당 락을 직접 제거 해야 한다. 따라서 spring이나 dbcp 등 에서 사용할 경우 exception 발생시에 해당 connection에서 RELEASE_LOCK 을 호출하도록 작성한다.   
+> version 컬럼을 이용한 낙관적 잠금 및 그냥 for update lock을 활용한 비관적 잠금 방식도 있다
 
 #### JdbcLockRegistry
 
