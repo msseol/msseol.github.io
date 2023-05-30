@@ -13,7 +13,7 @@ cover: note.png
 **1. 파일 중 특정 문자를 포함한 라인을 전부 출력한다.**
 
 ```bash
-sudo grep -hnr "Direct Request" application.log > ~/output.txt
+sudo grep -hnr "Direct Request" application.log > ~/output.txt  
 ```
 
 **2. 날짜 지난 파일 삭제(feat. crontab)**
@@ -40,6 +40,7 @@ curl -XPOST -H 'content-type:application/octet-stream' 'localhost/uploads?fileNa
 netstat -nao | findstr {port}
 jps -v
 ps -ef | grep {xxx}
+lsof -i :{port}
 ```
 
 **6. task 확인**
