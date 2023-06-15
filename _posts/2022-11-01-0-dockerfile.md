@@ -189,7 +189,7 @@ CMD start.sh -h 127.0.0.1 -p ${port}
 
 #### 기타
 
-Window Docker Desktop과 WSL2 통합하기
+**Window Docker Desktop과 WSL2 통합하기**
 
 
 ```powershell
