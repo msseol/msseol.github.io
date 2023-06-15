@@ -185,5 +185,32 @@ CMD start.sh -h 127.0.0.1 -p ${port}
 [원본 참고 사이트][link]   
 [공식 레퍼런스][link2]
 
+---
+
+#### 기타
+
+Window Docker Desktop과 WSL2 통합하기
+
+
+```powershell
+wls -l -v # 사용중인 버전 확인
+
+ex)
+  NAME                   STATE           VERSION
+* Alpine                 Running         1
+  docker-desktop         Running         2
+  Ubuntu-22.04           Running         1
+  docker-desktop-data    Running         2
+
+wsl --set-version Alpine 2 # 2버전으로 변경
+wsl --set-version Ubuntu-22.04 2 # 2버전으로 변경
+```
+
+`Docker-desktop > General > Use the WSL 2 based engine`   
+`Docker-desktop > Resources > WSL Integration > Enable intergration with my defauilt distro`
+
+위에서 변경한 2버전 항목들이 목록으로 노출되며, 설정 포함시 통합된다.
+
+
 [link]: https://www.daleseo.com/dockerfile/
 [link2]: https://docs.docker.com/engine/reference/builder/
